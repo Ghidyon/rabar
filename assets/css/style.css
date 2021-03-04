@@ -11,9 +11,11 @@
     --priColor: #0A2A06;
     --green: #46760A;
     --orange: #FF8311;
+    --gray: #A9A9A9;
+    --silver :#F9F9F9;
+    /* --dgray: #D1D1D1; */
 }
 /* 
-    font-family: 'Open Sans', sans-serif;
 */
 
 body {
@@ -30,7 +32,6 @@ a {
 
 .container {
     max-width: 1440px;
-    /* min-width: 100vw; */
 }
 
 /* Navbar */
@@ -40,13 +41,17 @@ a {
     align-items: center;
 }
 
+.nav-container > div:first-of-type img {
+    max-height: 150px;
+}
+
 .nav-container ul {
     display: flex;
     align-items: center;
 }
 
 .nav-container ul li {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .nav-container div:last-of-type {
@@ -54,12 +59,28 @@ a {
 }
 
 .nav-container div:last-of-type button {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .nav-container div:last-of-type button:last-of-type {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 15px;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header-container .categories {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #d1d1d1;
+    border-radius: 5px;
 }
 
 /* Buttons */
@@ -85,8 +106,16 @@ button {
 }
 
 /* Utilities */
+.size-14 {
+    font-size: 14px;
+}
+
 .size-18 {
     font-size: 18px;
+}
+
+.size-36 {
+    font-size: 36px;
 }
 
 .font-nunuito {
@@ -96,4 +125,12 @@ button {
 
 .font-poppins {
     font-family: 'Poppins', sans-serif;
+}
+
+.font-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gray {
+    color: var(--gray);
 }
