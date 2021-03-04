@@ -1,1 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --priColor: #0A2A06;
+    --green: #46760A;
+    --orange: #FF8311;
+}
+/* 
+    font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--priColor);
+    transition: color .3s ease;
+    font-weight: 400;
+}
+
+
+.container {
+    max-width: 1440px;
+    /* min-width: 100vw; */
+}
+
+/* Navbar */
+.nav-container {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container ul li {
+    margin-left: 2rem;
+}
+
+.nav-container div:last-of-type {
+    margin-left: auto;
+}
+
+.nav-container div:last-of-type button {
+    margin-right: 2rem;
+}
+
+.nav-container div:last-of-type button:last-of-type {
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/* Buttons */
+button {
+    background: inherit;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    transition: all .3s ease;
+}
+
+.outline-btn {
+    color: var(--priColor);
+    border: 1px solid var(--priColor);
+}
+
+.solid-btn {
+    color: #fff;
+    background: var(--priColor);
+    border: 1px solid var(--priColor);
+    font-weight: 700;
+}
+
+/* Utilities */
+.size-18 {
+    font-size: 18px;
+}
+
+.font-nunuito {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
