@@ -78,10 +78,35 @@ a {
 .header-container .categories {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px 20px;
     border: 2px solid #d1d1d1;
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: var(--silver);
 }
+
+.categories p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.categories p img {
+    margin: 0 1.5rem 0 .5rem;
+}
+
+.categories input {
+    border: 0;
+    border-left: 1px solid var(--gray);
+    padding-left: 2rem;
+    background-color: inherit;
+    width: 300px;
+}
+
+.categories input::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
 
 /* Buttons */
 button {
@@ -108,6 +133,10 @@ button {
 /* Utilities */
 .size-14 {
     font-size: 14px;
+}
+
+.size-16 {
+    font-size: 16px;
 }
 
 .size-18 {
