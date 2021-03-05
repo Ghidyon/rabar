@@ -13,6 +13,7 @@
     --orange: #FF8311;
     --gray: #A9A9A9;
     --silver :#F9F9F9;
+    --darkgray: #575757;
     /* --dgray: #D1D1D1; */
 }
 /* 
@@ -71,8 +72,8 @@ a {
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
+    align-items: flex-end;
+    padding: 2rem;
 }
 
 .header-container .categories {
@@ -97,16 +98,64 @@ a {
 .categories input {
     border: 0;
     border-left: 1px solid var(--gray);
-    padding-left: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 3px;
     background-color: inherit;
+    outline: none;
     width: 300px;
 }
 
 .categories input::placeholder {
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
+.header-icons {
+    position: relative;
+}
+
+.header-icons .bag {
+    margin-left: 3rem;
+}
+
+.header-icons .badge {
+    position: absolute;
+    top: 14px;
+    left: 80%;
+    transform: translate(-80%);
+}
+
+/* Sections */
+section {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+.grid-item > p:first-of-type {
+    margin: 1rem 0 .3rem 0;
+}
+
+.grid-item > div:first-of-type img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price button {
+    border: 2px solid var(--green);
+    border-radius: 12px;
+    padding: 7px 15px;
+}
 
 /* Buttons */
 button {
@@ -131,8 +180,17 @@ button {
 }
 
 /* Utilities */
+
+.size-12 {
+    font-size: 12px;
+}
+
 .size-14 {
     font-size: 14px;
+}
+
+.size-15 {
+    font-size: 15px;
 }
 
 .size-16 {
@@ -162,4 +220,28 @@ button {
 
 .gray {
     color: var(--gray);
+}
+
+.darkgray {
+    color: var(--darkgray);
+}
+
+.weight-5 {
+    font-weight: 500;
+}
+
+.weight-6 {
+    font-weight: 600;
+}
+
+.weight-7 {
+    font-weight: 700;
+}
+
+.white {
+    color: #fff;
+}
+
+.bg-green {
+    background-color: var(--priColor);
 }
