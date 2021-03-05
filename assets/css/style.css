@@ -145,7 +145,7 @@ section {
 .discount {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 10px;
     background: var(--silver);
     color: var(--priColor);
     padding: 0 10px;
